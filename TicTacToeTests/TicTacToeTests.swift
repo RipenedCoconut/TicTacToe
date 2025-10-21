@@ -14,4 +14,8 @@ struct TicTacToeTests {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.
     }
 
+    @Test func testWinConditions() async throws {
+        let exampleTiles: [tileLocation] = [.a1, .a2, .a3]
+        #expect(checkWinCondition(tileList: exampleTiles) == true)
+    }
 }
