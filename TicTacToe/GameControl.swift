@@ -20,24 +20,34 @@ enum winType {
     var winMessage: String{
         switch self {
         case .player: return "You win the game!"
-        case .computer: return "The computer bested you!"
+        case .computer: return "The computer beat you!"
         case .draw: return "It's a draw!"
         }
     }
 }
 
+enum playerSymbol {
+    case playerX, playerO
+    
+    var label: String {
+        switch self {
+        case .playerX: return "X"
+        case .playerO: return "O"
+        }
+    }
+    
+    var id: Self { self }
+}
+
 //Holds the current winner; gameOver is true only when a winner has been determined
 var currentWinner = winType.draw
 var gameOver = false
+var playerSelection = playerSymbol.playerX
 
 //Hold the taken spots for each player; openOptions holds the unchosen spots
 var playerTiles: [tileLocation] = []
 var cpuTiles: [tileLocation] = []
 var openOptions: [tileLocation] = [.a1, .a2, .a3, .b1, .b2, .b3, .c1, .c2, .c3]
-
-//Define the symbol used for each player
-let playerSymbol = "X"
-let cpuSymbol = "O"
 
 //Hard coded list of all the possible winning combinations
 let winningCombos: [[tileLocation]] = [[.a1, .a2, .a3], [.b1, .b2, .b3], [.c1, .c2, .c3], [.a1, .b1, .c1], [.a2, .b2, .c2], [.a3, .b3, .c3], [.a1, .b2, .c3], [.a3, .b2, .c1]]
@@ -117,9 +127,13 @@ func buttonText(buttonID: tileLocation) -> String {
     
     //Check location for player or computer occupation, if so mark the spot
     if(playerTiles.contains(buttonID)){
-        returnText = playerSymbol
+        returnText = playerSelection.label
     } else if (cpuTiles.contains(buttonID)){
-        returnText = cpuSymbol
+        if(playerSelection == .playerO){
+            returnText = playerSymbol.playerX.label
+        } else {
+            returnText = playerSymbol.playerO.label
+        }
     }
     
     //Return appropraite button label based on location occupation

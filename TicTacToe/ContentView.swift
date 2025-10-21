@@ -10,10 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @State var currGame = currentGame()
     @State public var showingEndGame = gameOver
+    @State public var selectedOption: playerSymbol = playerSymbol.playerX
+    
+    let options: [playerSymbol] = [.playerX, .playerO]
     
     var body: some View {
         VStack {
-            Text("Tic Tac Toe")
             HStack{
                 
                 //Button text determined by buttonText function in currentGame()
@@ -22,7 +24,7 @@ struct ContentView: View {
                     
                     //If game is over, show dialog
                     showingEndGame = gameOver
-                }
+                }.buttonStyle(.bordered)
                 
                 //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .a2)){
@@ -30,7 +32,7 @@ struct ContentView: View {
                     
                     //If game is over, show dialog
                     showingEndGame = gameOver
-                }
+                }.buttonStyle(.bordered)
                 
                 //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .a3)){
@@ -38,7 +40,7 @@ struct ContentView: View {
                     
                     //If game is over, show dialog
                     showingEndGame = gameOver
-                }
+                }.buttonStyle(.bordered)
             }
             HStack{
                 
@@ -48,7 +50,7 @@ struct ContentView: View {
                     
                     //If game is over, show dialog
                     showingEndGame = gameOver
-                }
+                }.buttonStyle(.bordered)
                 
                 //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .b2)){
@@ -56,7 +58,7 @@ struct ContentView: View {
                     
                     //If game is over, show dialog
                     showingEndGame = gameOver
-                }
+                }.buttonStyle(.bordered)
                 
                 //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .b3)){
@@ -64,7 +66,7 @@ struct ContentView: View {
                     
                     //If game is over, show dialog
                     showingEndGame = gameOver
-                }
+                }.buttonStyle(.bordered)
             }
             HStack {
                 
@@ -74,7 +76,7 @@ struct ContentView: View {
                     
                     //If game is over, show dialog
                     showingEndGame = gameOver
-                }
+                }.buttonStyle(.bordered)
                 
                 //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .c2)){
@@ -82,7 +84,7 @@ struct ContentView: View {
                     
                     //If game is over, show dialog
                     showingEndGame = gameOver
-                }
+                }.buttonStyle(.bordered)
                 
                 //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .c3)){
@@ -90,37 +92,33 @@ struct ContentView: View {
                     
                     //If game is over, show dialog
                     showingEndGame = gameOver
-                }
+                }.buttonStyle(.bordered)
                 
                 .alert(currentWinner.winMessage, isPresented: $showingEndGame){
                     Button("Close", role: .cancel){}
                 }
             }
             
-          
-
-            
             Spacer()
                 .frame(height: 15)
             
-            Text("Move number: " + String(currGame.getMoves()))
-               
-            HStack{
-                Button("New Game"){
-                    currGame.newGame()
-                }
-                Button("Exit"){
-                    NSApp.terminate(nil)
-                    
-                }
+            Button("New Game"){
+                currGame.newGame()
             }
             
+            Picker("Symbol:", selection: $selectedOption) {
+                Text(playerSymbol.playerX.label).tag(playerSymbol.playerX)
+                Text(playerSymbol.playerO.label).tag(playerSymbol.playerO)
+            } .onChange(of: selectedOption) {
+                playerSelection = selectedOption
+            }
+            
+            Text("Move number: " + String(currGame.getMoves()))
         }
         .padding()
     }
-}
 
+}
 #Preview {
     ContentView()
-    
 }
