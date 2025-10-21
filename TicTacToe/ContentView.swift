@@ -15,46 +15,84 @@ struct ContentView: View {
         VStack {
             Text("Tic Tac Toe")
             HStack{
+                
+                //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .a1)){
                     currGame.buttonPressed(bPressed: tileLocation.a1)
+                    
+                    //If game is over, show dialog
                     showingEndGame = gameOver
                 }
+                
+                //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .a2)){
                     currGame.buttonPressed(bPressed: tileLocation.a2)
+                    
+                    //If game is over, show dialog
                     showingEndGame = gameOver
                 }
+                
+                //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .a3)){
                     currGame.buttonPressed(bPressed: tileLocation.a3)
+                    
+                    //If game is over, show dialog
                     showingEndGame = gameOver
                 }
             }
             HStack{
+                
+                //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .b1)){
                     currGame.buttonPressed(bPressed: tileLocation.b1)
+                    
+                    //If game is over, show dialog
                     showingEndGame = gameOver
                 }
+                
+                //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .b2)){
                     currGame.buttonPressed(bPressed: tileLocation.b2)
+                    
+                    //If game is over, show dialog
                     showingEndGame = gameOver
                 }
+                
+                //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .b3)){
                     currGame.buttonPressed(bPressed: tileLocation.b3)
+                    
+                    //If game is over, show dialog
                     showingEndGame = gameOver
                 }
             }
             HStack {
+                
+                //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .c1)){
                     currGame.buttonPressed(bPressed: tileLocation.c1)
+                    
+                    //If game is over, show dialog
                     showingEndGame = gameOver
                 }
+                
+                //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .c2)){
                     currGame.buttonPressed(bPressed: tileLocation.c2)
+                    
+                    //If game is over, show dialog
                     showingEndGame = gameOver
                 }
+                
+                //Button text determined by buttonText function in currentGame()
                 Button(buttonText(buttonID: .c3)){
                     currGame.buttonPressed(bPressed: tileLocation.c3)
+                    
+                    //If game is over, show dialog
                     showingEndGame = gameOver
-                } .alert(currentWinner.winMessage, isPresented: $showingEndGame){
+                }
+                
+                .alert(currentWinner.winMessage, isPresented: $showingEndGame){
                     Button("Close", role: .cancel){}
                 }
             }
