@@ -7,51 +7,6 @@
 
 import Foundation
 
-//Type for all possible tile locations
-enum tileLocation {
-    case a1, a2, a3, b1, b2, b3, c1, c2, c3
-}
-
-//Three win types: player, cpu, draw
-enum winType {
-    case player, computer, draw
-    
-    //Resulting message displayed after each win type
-    var winMessage: String{
-        switch self {
-        case .player: return "You win the game!"
-        case .computer: return "The computer beat you!"
-        case .draw: return "It's a draw!"
-        }
-    }
-}
-
-enum playerSymbol {
-    case playerX, playerO
-    
-    var label: String {
-        switch self {
-        case .playerX: return "X"
-        case .playerO: return "O"
-        }
-    }
-    
-    var id: Self { self }
-}
-
-//Holds the current winner; gameOver is true only when a winner has been determined
-var currentWinner = winType.draw
-var gameOver = false
-var playerSelection = playerSymbol.playerX
-
-//Hold the taken spots for each player; openOptions holds the unchosen spots
-var playerTiles: [tileLocation] = []
-var cpuTiles: [tileLocation] = []
-var openOptions: [tileLocation] = [.a1, .a2, .a3, .b1, .b2, .b3, .c1, .c2, .c3]
-
-//Hard coded list of all the possible winning combinations
-let winningCombos: [[tileLocation]] = [[.a1, .a2, .a3], [.b1, .b2, .b3], [.c1, .c2, .c3], [.a1, .b1, .c1], [.a2, .b2, .c2], [.a3, .b3, .c3], [.a1, .b2, .c3], [.a3, .b2, .c1]]
-
 //This struct represents the current game
 struct currentGame {
     
@@ -86,12 +41,17 @@ struct currentGame {
         
         //Execute computer player strategy only when game not concluded
         if(!gameOver){
-            let cpuMax: Int = openOptions.count - 1
-            let cpuChoice = Int.random(in: 0...cpuMax)
+//            let cpuMax: Int = openOptions.count - 1
+//            let cpuChoice = Int.random(in: 0...cpuMax)
             
             //Add computer choice and remove it from available options list
-            cpuTiles.append(openOptions[cpuChoice])
-            openOptions.remove(at: cpuChoice)
+//            cpuTiles.append(openOptions[cpuChoice])
+//            openOptions.remove(at: cpuChoice)
+            let cpuMove = findBestMove();
+            if let removeIndex = openOptions.firstIndex(of: cpuMove) {
+                openOptions.remove(at: removeIndex)
+            }
+            cpuTiles.append(cpuMove)
             
             //Set the current player as computer and check if last move wins
             currentWinner = winType.computer
@@ -111,33 +71,6 @@ struct currentGame {
     func getMoves() -> Int {
         return moves
     }
-}
-
-/*
- * Function to generate the button text based on location.
- *
- * Parameters:
- *      buttonID: A valid tileLocation to generate text for
- *
- * Returns: Correct symbol for the passed button as a string
- */
-func buttonText(buttonID: tileLocation) -> String {
-    //Return blank string to show an empty square
-    var returnText = "  "
-    
-    //Check location for player or computer occupation, if so mark the spot
-    if(playerTiles.contains(buttonID)){
-        returnText = playerSelection.label
-    } else if (cpuTiles.contains(buttonID)){
-        if(playerSelection == .playerO){
-            returnText = playerSymbol.playerX.label
-        } else {
-            returnText = playerSymbol.playerO.label
-        }
-    }
-    
-    //Return appropraite button label based on location occupation
-    return returnText
 }
 
 
