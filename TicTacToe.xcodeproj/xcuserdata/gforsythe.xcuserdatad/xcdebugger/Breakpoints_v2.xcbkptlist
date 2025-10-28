@@ -23,15 +23,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5AEBFA13-A332-4F6D-AB50-DBD746896BC3"
+            uuid = "9CF50835-39BF-44B2-BD78-F0B83754B2B1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TicTacToe/GameLogic/ComputerStrategy.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "findBestMove()"
             landmarkType = "9">
          </BreakpointContent>
@@ -39,15 +39,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9CF50835-39BF-44B2-BD78-F0B83754B2B1"
-            shouldBeEnabled = "Yes"
+            uuid = "F72E10BE-4E2D-41F1-BA27-D9A5534249A0"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TicTacToe/GameLogic/ComputerStrategy.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "findBestMove()"
             landmarkType = "9">
          </BreakpointContent>
