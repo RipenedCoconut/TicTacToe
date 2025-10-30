@@ -26,6 +26,24 @@ enum winType {
     }
 }
 
+enum gameDifficulty{
+    case easy, normal
+    
+    var label: String {
+        switch self {
+        case .easy: return "Easy"
+        case .normal: return "Normal"
+        }
+    }
+    var bestMove: tileLocation {
+        switch self {
+        case .easy: return findBestMoveEasy()
+        case .normal: return findBestMoveNormal()
+        }
+    }
+   
+}
+
 enum playerSymbol {
     case playerX, playerO
     
@@ -43,6 +61,7 @@ enum playerSymbol {
 var currentWinner = winType.draw
 var gameOver = false
 var playerSelection = playerSymbol.playerX
+var difficultySelection = gameDifficulty.normal
 
 //Hold the taken spots for each player; openOptions holds the unchosen spots
 var playerTiles: [tileLocation] = []

@@ -9,33 +9,33 @@ import Foundation
 
 var playerWinningMove = openOptions[0]
 
-//func findBestMove2() -> tileLocation {
-//    var bestMove: tileLocation = openOptions.randomElement()!
-//    var bestCombo = winningCombos[0]
-//    var bestComboValue = 0
-//    
-//    let openTileSet = Set(openOptions)
-//    let cpuTileSet = Set(cpuTiles)
-//    
-//    for testCombo in winningCombos {
-//        let testComboSet = Set(testCombo)
-//        let potentialWinningSet = testComboSet.intersection(cpuTileSet).union(testComboSet.intersection(openTileSet))
-//        if(potentialWinningSet.count >= 3 && testComboSet.intersection(cpuTileSet).count > bestComboValue){
-//            bestComboValue = testComboSet.intersection(cpuTileSet).count
-//            bestCombo = testCombo
-//        }
-//    }
-//    
-//    for testOption in bestCombo {
-//        if(openOptions.contains(testOption)){
-//            bestMove = testOption
-//        }
-//    }
-//    
-//    return bestMove
-//}
+func findBestMoveEasy() -> tileLocation {
+    var bestMove: tileLocation = openOptions.randomElement()!
+    var bestCombo = winningCombos[0]
+    var bestComboValue = 0
+    
+    let openTileSet = Set(openOptions)
+    let cpuTileSet = Set(cpuTiles)
+    
+    for testCombo in winningCombos {
+        let testComboSet = Set(testCombo)
+        let potentialWinningSet = testComboSet.intersection(cpuTileSet).union(testComboSet.intersection(openTileSet))
+        if(potentialWinningSet.count >= 3 && testComboSet.intersection(cpuTileSet).count > bestComboValue){
+            bestComboValue = testComboSet.intersection(cpuTileSet).count
+            bestCombo = testCombo
+        }
+    }
+    
+    for testOption in bestCombo {
+        if(openOptions.contains(testOption)){
+            bestMove = testOption
+        }
+    }
+    
+    return bestMove
+}
 
-func findBestMove() -> tileLocation {
+func findBestMoveNormal() -> tileLocation {
     var bestMove: tileLocation = openOptions.randomElement()!
     var bestCombo = winningCombos[0]
     var bestComboValue = 0

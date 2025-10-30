@@ -47,7 +47,7 @@ struct currentGame {
             //Add computer choice and remove it from available options list
 //            cpuTiles.append(openOptions[cpuChoice])
 //            openOptions.remove(at: cpuChoice)
-            let cpuMove = findBestMove();
+            let cpuMove = difficultySelection.bestMove;
             if let removeIndex = openOptions.firstIndex(of: cpuMove) {
                 openOptions.remove(at: removeIndex)
             }

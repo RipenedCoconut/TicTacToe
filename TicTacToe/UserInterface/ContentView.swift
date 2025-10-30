@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State var currGame = currentGame()
     @State public var showingEndGame = gameOver
-    @State public var selectedOption: playerSymbol = playerSymbol.playerX
+    @State public var selectedSymbol: playerSymbol = playerSymbol.playerX
+    @State public var selectedDifficulty: gameDifficulty = difficultySelection
     
     let options: [playerSymbol] = [.playerX, .playerO]
     
@@ -106,12 +107,20 @@ struct ContentView: View {
                 currGame.newGame()
             }
             
-            Picker("Symbol:", selection: $selectedOption) {
+            Picker("Mode:", selection: $selectedDifficulty) {
+                Text(gameDifficulty.easy.label).tag(gameDifficulty.easy)
+                Text(gameDifficulty.normal.label).tag(gameDifficulty.normal)
+            } .onChange(of: selectedDifficulty) {
+                difficultySelection = selectedDifficulty
+            }
+            
+            Picker("Symbol:", selection: $selectedSymbol) {
                 Text(playerSymbol.playerX.label).tag(playerSymbol.playerX)
                 Text(playerSymbol.playerO.label).tag(playerSymbol.playerO)
-            } .onChange(of: selectedOption) {
-                playerSelection = selectedOption
-            }
+            } .onChange(of: selectedSymbol) {
+                playerSelection = selectedSymbol
+            }    
+            
             
             Text("Move number: " + String(currGame.getMoves()))
         }
