@@ -1,5 +1,5 @@
 # Swift TicTacToe
-TicTacToe app intitally designed for macOS with a cross compatibility focus. The  current use case is to train a createML AI model opponent with variable difficulty.
+TicTacToe app designed for macOS with a cross compatibility focus. The  current use case is to train a createML AI model opponent with variable difficulty.
 ### SwiftUI
 Currently in it's early stages, this app runs on macOS in a single view leveraging SwiftUI. This model should allow for simple porting to iOS, iPadOS, and watchOS devices. When the player chooses a square, the computer immediately responds until the game is complete.
 ### createML
