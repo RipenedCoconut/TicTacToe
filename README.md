@@ -12,7 +12,7 @@ Tasks left to be implemented in this project:
 * Fix button size and improve gerneal appearance
 * Create test plan
 * Add ability to change player symbol (X or O) ☑
-* Create algorithim for CPU player
+* Create algorithim for CPU player ☑
 * Add iOS build target ☑
 ### Medium-term
 * Conform app to MVVM standard
