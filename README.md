@@ -16,7 +16,7 @@ Tasks left to be implemented in this project:
 * Add iOS build target ☑
 ### Medium-term
 * Conform app to MVVM standard
-* Implement varying difficulty levels
+* Implement varying difficulty levels ☑
 * Add ability for UI to scale
 * Begin training ML model
 ### Long-term
