@@ -26,6 +26,17 @@ enum winType {
     }
 }
 
+enum playerType {
+    case player, computer
+    
+    var tiles: [tileLocation]{
+        switch self {
+        case .player: return playerTiles
+        case .computer: return cpuTiles
+        }
+    }
+}
+
 enum gameDifficulty{
     case easy, normal
     
