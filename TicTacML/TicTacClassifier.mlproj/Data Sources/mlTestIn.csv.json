@@ -1,0 +1,41 @@
+{
+  "activityEntities" : [
+    "dataSourceMetrics",
+    [
+      {
+        "createdDate" : "2025-11-02T22:44:20Z",
+        "event" : "dataSourceMetrics",
+        "id" : "F2C01462-4DB7-47C0-8E0E-0CB721050D6A",
+        "subtitle" : "5 Classes, 7 Items",
+        "title" : "Data Summary"
+      }
+    ],
+    "dataSourceTrainingStarted",
+    [
+      {
+        "createdDate" : "2025-11-02T22:44:20Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "47B1ACDD-AF9D-4519-92EB-179BCF180201",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Used By"
+      }
+    ]
+  ],
+  "createdDate" : "2025-11-02T22:30:45Z",
+  "dataPathRelativeToProjectURL" : "../../mlTestIn.csv/",
+  "dataResult" : {
+    "createdDate" : "2025-11-02T22:30:45Z",
+    "dataSourceID" : "D5BE1EDC-F9E5-4F1A-A2E8-55F9ECCD1238",
+    "dataURL" : "file:///Users/gforsythe/Documents/XCode%20Projects/mlTestIn.csv"
+  },
+  "dataURL" : "file:///Users/gforsythe/Documents/XCode%20Projects/mlTestIn.csv",
+  "experimentIDs" : [
+    "CDDAB3F3-C1C5-4C5F-9632-FEB662ACF24A"
+  ],
+  "id" : "D5BE1EDC-F9E5-4F1A-A2E8-55F9ECCD1238",
+  "modifiedDate" : "2025-11-02T22:44:20Z",
+  "pathType" : 0,
+  "preferredFilename" : "mlTestIn.csv",
+  "title" : "mlTestIn.csv",
+  "version" : "1.0"
+}

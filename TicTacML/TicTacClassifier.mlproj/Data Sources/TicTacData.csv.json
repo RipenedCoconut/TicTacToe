@@ -1,0 +1,41 @@
+{
+  "activityEntities" : [
+    "dataSourceTrainingStarted",
+    [
+      {
+        "createdDate" : "2025-11-03T00:35:57Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "40192CDC-E409-4613-B3F6-F7ADA884E2A4",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Used By"
+      }
+    ],
+    "dataSourceMetrics",
+    [
+      {
+        "createdDate" : "2025-11-03T00:35:57Z",
+        "event" : "dataSourceMetrics",
+        "id" : "1389B7BE-B80D-4929-8CB3-B8A88677C3EF",
+        "subtitle" : "9 Classes, 117 Items",
+        "title" : "Data Summary"
+      }
+    ]
+  ],
+  "createdDate" : "2025-11-03T00:31:45Z",
+  "dataPathRelativeToProjectURL" : "../../../../Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv/",
+  "dataResult" : {
+    "createdDate" : "2025-11-03T00:31:45Z",
+    "dataSourceID" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
+    "dataURL" : "file:///Users/gforsythe/Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv"
+  },
+  "dataURL" : "file:///Users/gforsythe/Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv",
+  "experimentIDs" : [
+    "CDDAB3F3-C1C5-4C5F-9632-FEB662ACF24A"
+  ],
+  "id" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
+  "modifiedDate" : "2025-11-03T00:35:57Z",
+  "pathType" : 0,
+  "preferredFilename" : "TicTacData.csv",
+  "title" : "TicTacData.csv",
+  "version" : "1.0"
+}

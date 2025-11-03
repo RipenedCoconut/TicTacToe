@@ -1,0 +1,29 @@
+{
+  "activityEntities" : [
+    "projectCreated",
+    [
+      {
+        "createdDate" : "2025-11-02T22:22:23Z",
+        "event" : "projectCreated",
+        "id" : "EB3B1C6E-B131-4E00-952E-B2A93EE4D095",
+        "subtitle" : "TicTacClassifier",
+        "title" : "Project Created"
+      }
+    ]
+  ],
+  "authorName" : "Garrett Forsythe",
+  "createdDate" : "2025-11-02T22:22:23Z",
+  "description" : "",
+  "id" : "1755C6BF-A58D-4856-97E8-575E64187146",
+  "license" : "",
+  "location" : "",
+  "modifiedDate" : "2025-11-02T22:22:23Z",
+  "projectName" : "TicTacClassifier",
+  "settingsEntity" : {
+    "snapshotOnExtendTraining" : true,
+    "snapshotOnResumeTraining" : false
+  },
+  "taskType" : "generalClassifier",
+  "title" : "Tabular Classification",
+  "version" : "1.1"
+}

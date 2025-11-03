@@ -1,0 +1,22 @@
+{
+  "activityEntities" : [
+
+  ],
+  "createdDate" : "2025-11-02T22:24:02Z",
+  "dataPathRelativeToProjectURL" : "../../mlTest.csv/",
+  "dataResult" : {
+    "createdDate" : "2025-11-02T22:24:02Z",
+    "dataSourceID" : "5300400E-42E4-47CB-A5B7-0DA4BA1FA070",
+    "dataURL" : "file:///Users/gforsythe/Documents/XCode%20Projects/mlTest.csv"
+  },
+  "dataURL" : "file:///Users/gforsythe/Documents/XCode%20Projects/mlTest.csv",
+  "experimentIDs" : [
+    "CDDAB3F3-C1C5-4C5F-9632-FEB662ACF24A"
+  ],
+  "id" : "5300400E-42E4-47CB-A5B7-0DA4BA1FA070",
+  "modifiedDate" : "2025-11-02T22:24:02Z",
+  "pathType" : 0,
+  "preferredFilename" : "mlTest.csv",
+  "title" : "mlTest.csv",
+  "version" : "1.0"
+}

@@ -1,0 +1,22 @@
+{
+  "activityEntities" : [
+
+  ],
+  "createdDate" : "2025-11-03T00:34:39Z",
+  "dataPathRelativeToProjectURL" : "../../../../Desktop/Test.csv/",
+  "dataResult" : {
+    "createdDate" : "2025-11-03T00:34:39Z",
+    "dataSourceID" : "A8496C87-92DF-4C75-9F7C-65294E6E5C94",
+    "dataURL" : "file:///Users/gforsythe/Desktop/Test.csv"
+  },
+  "dataURL" : "file:///Users/gforsythe/Desktop/Test.csv",
+  "experimentIDs" : [
+    "CDDAB3F3-C1C5-4C5F-9632-FEB662ACF24A"
+  ],
+  "id" : "A8496C87-92DF-4C75-9F7C-65294E6E5C94",
+  "modifiedDate" : "2025-11-03T00:34:39Z",
+  "pathType" : 0,
+  "preferredFilename" : "Test.csv",
+  "title" : "Test.csv",
+  "version" : "1.0"
+}
