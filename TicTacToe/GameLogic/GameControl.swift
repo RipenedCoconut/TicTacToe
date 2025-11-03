@@ -65,6 +65,7 @@ struct currentGame {
         playerTiles = []
         cpuTiles = []
         openOptions = [.a1, .a2, .a3, .b1, .b2, .b3, .c1, .c2, .c3]
+        csvExportData = []
     }
     
     //Returns the current move counter
@@ -92,6 +93,7 @@ func checkWinCondition (tileList: [tileLocation]) -> Bool {
             }
             if(matchedElements >= 3){
                 print("gameWinMet")
+                exportData()
                 return true
             }
         }

@@ -35,6 +35,7 @@ func findBestMoveEasy() -> tileLocation {
         }
     }
     
+    saveComputerMove(cpuNextMove: bestMove)
     return bestMove
 }
 
@@ -69,6 +70,7 @@ func findBestMoveNormal() -> tileLocation {
         }
     }
     
+    saveComputerMove(cpuNextMove: bestMove)
     return bestMove
 }
 
