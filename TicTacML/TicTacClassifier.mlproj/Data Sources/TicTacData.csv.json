@@ -8,6 +8,13 @@
         "id" : "40192CDC-E409-4613-B3F6-F7ADA884E2A4",
         "subtitle" : "TicTacClassifier 1",
         "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-07T19:16:20Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "EA191F0D-ECB1-4B09-B4E8-E7DDC17EB66E",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Used By"
       }
     ],
     "dataSourceMetrics",
@@ -18,22 +25,83 @@
         "id" : "1389B7BE-B80D-4929-8CB3-B8A88677C3EF",
         "subtitle" : "9 Classes, 117 Items",
         "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-07T19:16:20Z",
+        "event" : "dataSourceMetrics",
+        "id" : "2A8541BD-E9AB-444E-ACEB-6D3EB9C84C96",
+        "subtitle" : "9 Classes, 213 Items",
+        "title" : "Data Summary"
       }
     ]
   ],
   "createdDate" : "2025-11-03T00:31:45Z",
   "dataPathRelativeToProjectURL" : "../../../../Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv/",
   "dataResult" : {
+    "columnTypes" : [
+      "String",
+      "String",
+      "String",
+      "Int"
+    ],
+    "columnValues" : [
+      "<nil>, c1, c1-a3, <nil>, c3, c3-c1, c3-c1-a3, <nil>, b2, b2-c1, <nil>, a2, a2-c1, <nil>, a2, a2-c1, a2-c1-b2, <nil>, b2, b2-c1, <nil>, c1, c1-a3, c1-a3-a1, <nil>, b3, <nil>, c2, <nil>, c3",
+      "a1, a1-a2, a1-a2-b2, a1, a1-b1, a1-b1-c2, a1-b1-c2-b2, a1, a1-b1, a1-b1-c2, a1, a1-b1, a1-b1-b2, a1, a1-b1, a1-b1-c3, a1-b1-c3-c2, a1, a1-b1, a1-b1-c2, c3, c3-c2, c3-c2-b2, c3-c2-b2-b3, a3, a3-b2, a1, a1-b2, c1, c1-b1",
+      "c1, a3, c2, c3, c1, a3, b3, b2, c1, a3, a2, c1, b3, a2, c1, b2, a3, b2, c1, a3, c1, a3, a1, a2, b3, c2, c2, b1, c3, b3",
+      "0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0"
+    ],
+    "columns" : [
+      "ComputerTiles",
+      "PlayerTiles",
+      "ComputerNextMove",
+      "ComputerWon"
+    ],
     "createdDate" : "2025-11-03T00:31:45Z",
+    "dataAnalysis" : {
+      "classifierAnalysis" : {
+
+      },
+      "issues" : [
+        {
+          "description" : "No target selected",
+          "severity" : "notReady"
+        },
+        {
+          "description" : "Data has 213 rows",
+          "severity" : "info"
+        },
+        {
+          "description" : "No features selected",
+          "severity" : "notReady"
+        }
+      ],
+      "objectDetectorAnalysis" : {
+        "details" : {
+
+        }
+      },
+      "summary" : {
+        "canUseValidation" : 1,
+        "sampleCount" : 213
+      }
+    },
     "dataSourceID" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
-    "dataURL" : "file:///Users/gforsythe/Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv"
+    "dataURL" : "file:///Users/gforsythe/Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv",
+    "error" : {
+      "code" : 1000,
+      "domain" : "composer.error.domain",
+      "errorType" : "notReady",
+      "reason" : "No target selected"
+    },
+    "itemsCount" : 213
   },
   "dataURL" : "file:///Users/gforsythe/Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv",
   "experimentIDs" : [
-    "CDDAB3F3-C1C5-4C5F-9632-FEB662ACF24A"
+    "CDDAB3F3-C1C5-4C5F-9632-FEB662ACF24A",
+    "E27EC4C4-8453-4C90-AEC3-20F44567C9FC"
   ],
   "id" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
-  "modifiedDate" : "2025-11-03T00:35:57Z",
+  "modifiedDate" : "2025-11-07T19:16:20Z",
   "pathType" : 0,
   "preferredFilename" : "TicTacData.csv",
   "title" : "TicTacData.csv",

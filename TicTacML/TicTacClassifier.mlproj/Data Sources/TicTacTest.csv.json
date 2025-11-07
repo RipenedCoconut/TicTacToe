@@ -1,0 +1,22 @@
+{
+  "activityEntities" : [
+
+  ],
+  "createdDate" : "2025-11-07T19:17:28Z",
+  "dataPathRelativeToProjectURL" : "../../../../../Desktop/TicTacTest.csv/",
+  "dataResult" : {
+    "createdDate" : "2025-11-07T19:17:28Z",
+    "dataSourceID" : "20CEACAC-47A8-4964-96FD-8CB6334AEE69",
+    "dataURL" : "file:///Users/gforsythe/Desktop/TicTacTest.csv"
+  },
+  "dataURL" : "file:///Users/gforsythe/Desktop/TicTacTest.csv",
+  "experimentIDs" : [
+    "E27EC4C4-8453-4C90-AEC3-20F44567C9FC"
+  ],
+  "id" : "20CEACAC-47A8-4964-96FD-8CB6334AEE69",
+  "modifiedDate" : "2025-11-07T19:17:28Z",
+  "pathType" : 0,
+  "preferredFilename" : "TicTacTest.csv",
+  "title" : "TicTacTest.csv",
+  "version" : "1.0"
+}
