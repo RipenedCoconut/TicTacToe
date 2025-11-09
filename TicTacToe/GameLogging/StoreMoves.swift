@@ -10,8 +10,8 @@ import Foundation
 var csvExportData: [[String]] = []
 
 func saveComputerMove (cpuNextMove: tileLocation) {
-    let gameComputerTiles = cpuTiles.map { String(describing: $0) }.joined(separator: "-")
-    let gamePlayerTiles = playerTiles.map { String(describing: $0) }.joined(separator: "-")
+    let gameComputerTiles = cpuTiles.map { $0.toString }.joined(separator: "-")
+    let gamePlayerTiles = playerTiles.map { $0.toString }.joined(separator: "-")
     let gameNextTile = String(describing: cpuNextMove)
     
     let csvRowData = [gameComputerTiles, gamePlayerTiles, gameNextTile]

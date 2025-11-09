@@ -110,6 +110,7 @@ struct ContentView: View {
             Picker("Mode:", selection: $selectedDifficulty) {
                 Text(gameDifficulty.easy.label).tag(gameDifficulty.easy)
                 Text(gameDifficulty.normal.label).tag(gameDifficulty.normal)
+                Text(gameDifficulty.mlModel.label).tag(gameDifficulty.mlModel)
             } .onChange(of: selectedDifficulty) {
                 difficultySelection = selectedDifficulty
             }

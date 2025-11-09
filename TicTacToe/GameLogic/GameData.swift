@@ -8,8 +8,22 @@
 import Foundation
 
 //Type for all possible tile locations
-enum tileLocation {
+enum tileLocation: CaseIterable {
     case a1, a2, a3, b1, b2, b3, c1, c2, c3
+    
+    var toString: String {
+        switch self {
+        case .a1: return "a1"
+        case .a2: return "a2"
+        case .a3: return "a3"
+        case .b1: return "b1"
+        case .b2: return "b2"
+        case .b3: return "b3"
+        case .c1: return "c1"
+        case .c2: return "c2"
+        case .c3: return "c3"
+        }
+    }
 }
 
 //Three win types: player, cpu, draw
@@ -38,20 +52,23 @@ enum playerType {
 }
 
 enum gameDifficulty{
-    case easy, normal
+    case easy, normal, mlModel
     
     var label: String {
         switch self {
         case .easy: return "Easy"
         case .normal: return "Normal"
+        case .mlModel: return "ML Model"
         }
     }
     var bestMove: tileLocation {
         switch self {
         case .easy: return findBestMoveEasy()
         case .normal: return findBestMoveNormal()
+        case .mlModel: return MLMoveNormal()
         }
     }
+    
    
 }
 

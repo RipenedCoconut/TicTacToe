@@ -8,11 +8,24 @@
 import Foundation
 import CoreML
 
+let modelNormal = initModel()
 
-func MLMoveNormal() -> tileLocation {
-    guard let modelNormal = try? TicTacClassifier(configuration: MLModelConfiguration()) else {
+func initModel() -> TicTacClassifier {
+    guard let modelN = try? TicTacClassifier(configuration: MLModelConfiguration()) else {
         fatalError("Model failed to load")
     }
+    
+    return modelN
+}
 
-    return .a1
+
+func MLMoveNormal() -> tileLocation {
+    let ComputerWin: Int64 = 1
+    
+    guard let nextMove = try? modelNormal.prediction(ComputerTiles: parseMoveData(tileList: cpuTiles), PlayerTiles: parseMoveData(tileList: playerTiles), ComputerWon: ComputerWin) else {
+        fatalError("Model failed to predict move")
+    }
+    
+
+    return parseMLOutput(modelOut: nextMove.ComputerNextMove)
 }
