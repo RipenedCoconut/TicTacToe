@@ -8,94 +8,66 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var currGame = currentGame()
-    @State public var showingEndGame = gameOver
+    @StateObject public var currGame = GameModel()
     @State public var selectedSymbol: playerSymbol = playerSymbol.playerX
-    @State public var selectedDifficulty: gameDifficulty = difficultySelection
-    
+    @State public var selectedDifficulty: gameDifficulty = .normal
+    let bModel = ButtonModel()
     let options: [playerSymbol] = [.playerX, .playerO]
-    
+
     var body: some View {
         VStack {
             HStack{
                 
-                //Button text determined by buttonText function in currentGame()
-                Button(buttonText(buttonID: .a1)){
-                    currGame.buttonPressed(bPressed: tileLocation.a1)
-                    
-                    //If game is over, show dialog
-                    showingEndGame = gameOver
+                //Button text determined by text function in currentGame()
+                Button(bModel.text(buttonID: .a1, currentGame: currGame)){
+                    currGame.buttonPressed(bPressed: tileLocation.a1, currentGame: currGame)
                 }.buttonStyle(.bordered)
                 
-                //Button text determined by buttonText function in currentGame()
-                Button(buttonText(buttonID: .a2)){
-                    currGame.buttonPressed(bPressed: tileLocation.a2)
-                    
-                    //If game is over, show dialog
-                    showingEndGame = gameOver
+                //Button text determined by text function in currentGame()
+                Button(bModel.text(buttonID: .a2, currentGame: currGame)){
+                    currGame.buttonPressed(bPressed: tileLocation.a2, currentGame: currGame)
                 }.buttonStyle(.bordered)
                 
-                //Button text determined by buttonText function in currentGame()
-                Button(buttonText(buttonID: .a3)){
-                    currGame.buttonPressed(bPressed: tileLocation.a3)
-                    
-                    //If game is over, show dialog
-                    showingEndGame = gameOver
+                //Button text determined by text function in currentGame()
+                Button(bModel.text(buttonID: .a3, currentGame: currGame)){
+                    currGame.buttonPressed(bPressed: tileLocation.a3, currentGame: currGame)
                 }.buttonStyle(.bordered)
             }
             HStack{
                 
-                //Button text determined by buttonText function in currentGame()
-                Button(buttonText(buttonID: .b1)){
-                    currGame.buttonPressed(bPressed: tileLocation.b1)
-                    
-                    //If game is over, show dialog
-                    showingEndGame = gameOver
+                //Button text determined by text function in currentGame()
+                Button(bModel.text(buttonID: .b1, currentGame: currGame)){
+                    currGame.buttonPressed(bPressed: tileLocation.b1, currentGame: currGame)
                 }.buttonStyle(.bordered)
                 
-                //Button text determined by buttonText function in currentGame()
-                Button(buttonText(buttonID: .b2)){
-                    currGame.buttonPressed(bPressed: tileLocation.b2)
-                    
-                    //If game is over, show dialog
-                    showingEndGame = gameOver
+                //Button text determined by text function in currentGame()
+                Button(bModel.text(buttonID: .b2, currentGame: currGame)){
+                    currGame.buttonPressed(bPressed: tileLocation.b2, currentGame: currGame)
                 }.buttonStyle(.bordered)
                 
-                //Button text determined by buttonText function in currentGame()
-                Button(buttonText(buttonID: .b3)){
-                    currGame.buttonPressed(bPressed: tileLocation.b3)
-                    
-                    //If game is over, show dialog
-                    showingEndGame = gameOver
+                //Button text determined by text function in currentGame()
+                Button(bModel.text(buttonID: .b3, currentGame: currGame)){
+                    currGame.buttonPressed(bPressed: tileLocation.b3, currentGame: currGame)
                 }.buttonStyle(.bordered)
             }
             HStack {
                 
-                //Button text determined by buttonText function in currentGame()
-                Button(buttonText(buttonID: .c1)){
-                    currGame.buttonPressed(bPressed: tileLocation.c1)
-                    
-                    //If game is over, show dialog
-                    showingEndGame = gameOver
+                //Button text determined by text function in currentGame()
+                Button(bModel.text(buttonID: .c1, currentGame: currGame)){
+                    currGame.buttonPressed(bPressed: tileLocation.c1, currentGame: currGame)
                 }.buttonStyle(.bordered)
                 
-                //Button text determined by buttonText function in currentGame()
-                Button(buttonText(buttonID: .c2)){
-                    currGame.buttonPressed(bPressed: tileLocation.c2)
-                    
-                    //If game is over, show dialog
-                    showingEndGame = gameOver
+                //Button text determined by text function in currentGame()
+                Button(bModel.text(buttonID: .c2, currentGame: currGame)){
+                    currGame.buttonPressed(bPressed: tileLocation.c2, currentGame: currGame)
                 }.buttonStyle(.bordered)
                 
-                //Button text determined by buttonText function in currentGame()
-                Button(buttonText(buttonID: .c3)){
-                    currGame.buttonPressed(bPressed: tileLocation.c3)
-                    
-                    //If game is over, show dialog
-                    showingEndGame = gameOver
+                //Button text determined by text function in currentGame()
+                Button(bModel.text(buttonID: .c3, currentGame: currGame)){
+                    currGame.buttonPressed(bPressed: tileLocation.c3, currentGame: currGame)
                 }.buttonStyle(.bordered)
                 
-                .alert(currentWinner.winMessage, isPresented: $showingEndGame){
+                    .alert(currGame.currentWinner.winMessage, isPresented: $currGame.gameOver){
                     Button("Close", role: .cancel){}
                 }
             }
@@ -112,14 +84,14 @@ struct ContentView: View {
                 Text(gameDifficulty.normal.label).tag(gameDifficulty.normal)
                 Text(gameDifficulty.mlModel.label).tag(gameDifficulty.mlModel)
             } .onChange(of: selectedDifficulty) {
-                difficultySelection = selectedDifficulty
+                currGame.difficultySelection = selectedDifficulty
             }
             
             Picker("Symbol:", selection: $selectedSymbol) {
                 Text(playerSymbol.playerX.label).tag(playerSymbol.playerX)
                 Text(playerSymbol.playerO.label).tag(playerSymbol.playerO)
             } .onChange(of: selectedSymbol) {
-                playerSelection = selectedSymbol
+                currGame.playerSelection = selectedSymbol
             }    
             
             

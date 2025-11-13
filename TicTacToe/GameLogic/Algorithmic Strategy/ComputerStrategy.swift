@@ -7,18 +7,20 @@
 
 import Foundation
 
-var playerWinningMove = openOptions[0]
-var computerWinningMove = openOptions[0]
+let freshModel = GameModel()
 
-func findBestMoveEasy() -> tileLocation {
-    var bestMove: tileLocation = openOptions.randomElement()!
+var playerWinningMove = freshModel.openOptions[0]
+var computerWinningMove = freshModel.openOptions[0]
+
+func findBestMoveEasy(currentGame: GameModel) -> tileLocation {
+    var bestMove: tileLocation = currentGame.openOptions.randomElement()!
     var bestCombo = winningCombos[0]
     var bestComboValue = 0
     
-    let openTileSet = Set(openOptions)
-    let cpuTileSet = Set(cpuTiles)
+    let openTileSet = Set(currentGame.openOptions)
+    let cpuTileSet = Set(currentGame.cpuTiles)
     
-    if(currentGame().getMoves() > 0){
+    if(GameModel().getMoves() > 0){
         for testCombo in winningCombos {
             let testComboSet = Set(testCombo)
             let potentialWinningSet = testComboSet.intersection(cpuTileSet).union(testComboSet.intersection(openTileSet))
@@ -29,25 +31,25 @@ func findBestMoveEasy() -> tileLocation {
         }
         
         for testOption in bestCombo {
-            if(openOptions.contains(testOption)){
+            if(currentGame.openOptions.contains(testOption)){
                 bestMove = testOption
             }
         }
     }
     
-    saveComputerMove(cpuNextMove: bestMove)
+    saveComputerMove(cpuNextMove: bestMove, currentGame: currentGame)
     return bestMove
 }
 
-func findBestMoveNormal() -> tileLocation {
-    var bestMove: tileLocation = openOptions.randomElement()!
+func findBestMoveNormal(currentGame: GameModel) -> tileLocation {
+    var bestMove: tileLocation = currentGame.openOptions.randomElement()!
     var bestCombo = winningCombos[0]
     var bestComboValue = 0
     
-    let openTileSet = Set(openOptions)
-    let cpuTileSet = Set(cpuTiles)
+    let openTileSet = Set(currentGame.openOptions)
+    let cpuTileSet = Set(currentGame.cpuTiles)
     
-    if(currentGame().getMoves() > 0){
+    if(GameModel().getMoves() > 0){
         for testCombo in winningCombos {
             let testComboSet = Set(testCombo)
             let potentialWinningSet = testComboSet.intersection(cpuTileSet).union(testComboSet.intersection(openTileSet))
@@ -58,23 +60,23 @@ func findBestMoveNormal() -> tileLocation {
         }
     }
     
-    if(canComputerWin()){
+    if(canComputerWin(currentGame: currentGame)){
         bestMove = computerWinningMove
-    } else if(canPlayerWin()){
+    } else if(canPlayerWin(currentGame: currentGame)){
         bestMove = playerWinningMove
-    } else if(currentGame().getMoves() > 0){
+    } else if(GameModel().getMoves() > 0){
         for testOption in bestCombo {
-            if(openOptions.contains(testOption)){
+            if(currentGame.openOptions.contains(testOption)){
                 bestMove = testOption
             }
         }
     }
     
-    saveComputerMove(cpuNextMove: bestMove)
+    saveComputerMove(cpuNextMove: bestMove, currentGame: currentGame)
     return bestMove
 }
 
-func canPlayerWin() -> Bool {
+func canPlayerWin(currentGame: GameModel) -> Bool {
     var willPlayerWin = false
     var playerInCombo = 0
     var openInCombo = 0
@@ -82,9 +84,9 @@ func canPlayerWin() -> Bool {
     
     for testCombo in winningCombos{
         for testOption in testCombo{
-            if(playerTiles.contains(testOption)){
+            if(currentGame.playerTiles.contains(testOption)){
                 playerInCombo += 1
-            } else if(openOptions.contains(testOption)){
+            } else if(currentGame.openOptions.contains(testOption)){
                 openInCombo += 1
             }
         }
@@ -96,7 +98,7 @@ func canPlayerWin() -> Bool {
         openInCombo = 0
         if(willPlayerWin == true){
             for testOption in playerWinningCombo {
-                if(openOptions.contains(testOption)){
+                if(currentGame.openOptions.contains(testOption)){
                     playerWinningMove = testOption
                 }
             }
@@ -107,7 +109,7 @@ func canPlayerWin() -> Bool {
     return willPlayerWin
 }
 
-func canComputerWin() -> Bool {
+func canComputerWin(currentGame: GameModel) -> Bool {
     var willComputerWin = false
     var computerInCombo = 0
     var openInCombo = 0
@@ -115,9 +117,9 @@ func canComputerWin() -> Bool {
     
     for testCombo in winningCombos{
         for testOption in testCombo{
-            if(cpuTiles.contains(testOption)){
+            if(currentGame.cpuTiles.contains(testOption)){
                 computerInCombo += 1
-            } else if(openOptions.contains(testOption)){
+            } else if(currentGame.openOptions.contains(testOption)){
                 openInCombo += 1
             }
         }
@@ -129,7 +131,7 @@ func canComputerWin() -> Bool {
         openInCombo = 0
         if(willComputerWin == true){
             for testOption in computerWinningCombo {
-                if(openOptions.contains(testOption)){
+                if(currentGame.openOptions.contains(testOption)){
                     computerWinningMove = testOption
                 }
             }

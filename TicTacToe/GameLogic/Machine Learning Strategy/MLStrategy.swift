@@ -19,10 +19,10 @@ func initModel() -> TicTacClassifier {
 }
 
 
-func MLMoveNormal() -> tileLocation {
+func MLMoveNormal(currentGame: GameModel) -> tileLocation {
     let ComputerWin: Int64 = 1
     
-    guard let nextMove = try? modelNormal.prediction(ComputerTiles: parseMoveData(tileList: cpuTiles), PlayerTiles: parseMoveData(tileList: playerTiles), ComputerWon: ComputerWin) else {
+    guard let nextMove = try? modelNormal.prediction(ComputerTiles: parseMoveData(tileList: currentGame.cpuTiles), PlayerTiles: parseMoveData(tileList: currentGame.playerTiles), ComputerWon: ComputerWin) else {
         fatalError("Model failed to predict move")
     }
     

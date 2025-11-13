@@ -15,6 +15,20 @@
         "id" : "EA191F0D-ECB1-4B09-B4E8-E7DDC17EB66E",
         "subtitle" : "TicTacClassifier 1",
         "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-11T20:14:17Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "176CDDF7-CB70-4BE7-9EFC-F092D8C9FBDD",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-11T20:49:18Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "F090FC0B-D316-45E6-9B89-15E1AF8B07AC",
+        "subtitle" : "TicTacClassifier 1 copy",
+        "title" : "Used By"
       }
     ],
     "dataSourceMetrics",
@@ -31,6 +45,20 @@
         "event" : "dataSourceMetrics",
         "id" : "2A8541BD-E9AB-444E-ACEB-6D3EB9C84C96",
         "subtitle" : "9 Classes, 213 Items",
+        "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-11T20:14:17Z",
+        "event" : "dataSourceMetrics",
+        "id" : "4500543F-1AE5-4C7F-9CFF-D96513506826",
+        "subtitle" : "9 Classes, 395 Items",
+        "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-11T20:49:18Z",
+        "event" : "dataSourceMetrics",
+        "id" : "94410315-54B8-419A-977D-89F4EB77E44A",
+        "subtitle" : "9 Classes, 422 Items",
         "title" : "Data Summary"
       }
     ]
@@ -67,7 +95,7 @@
           "severity" : "notReady"
         },
         {
-          "description" : "Data has 213 rows",
+          "description" : "Data has 422 rows",
           "severity" : "info"
         },
         {
@@ -82,7 +110,7 @@
       },
       "summary" : {
         "canUseValidation" : 1,
-        "sampleCount" : 213
+        "sampleCount" : 422
       }
     },
     "dataSourceID" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
@@ -93,15 +121,17 @@
       "errorType" : "notReady",
       "reason" : "No target selected"
     },
-    "itemsCount" : 213
+    "itemsCount" : 422
   },
   "dataURL" : "file:///Users/gforsythe/Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv",
   "experimentIDs" : [
     "CDDAB3F3-C1C5-4C5F-9632-FEB662ACF24A",
-    "E27EC4C4-8453-4C90-AEC3-20F44567C9FC"
+    "E27EC4C4-8453-4C90-AEC3-20F44567C9FC",
+    "EE8DCB58-73D6-4F1A-8C57-F05EA0A85FB6",
+    "BB9AE398-944B-4274-B117-21D4327477D4"
   ],
   "id" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
-  "modifiedDate" : "2025-11-07T19:16:20Z",
+  "modifiedDate" : "2025-11-11T20:49:18Z",
   "pathType" : 0,
   "preferredFilename" : "TicTacData.csv",
   "title" : "TicTacData.csv",

@@ -7,14 +7,21 @@
   "dataResult" : {
     "createdDate" : "2025-11-07T19:17:28Z",
     "dataSourceID" : "20CEACAC-47A8-4964-96FD-8CB6334AEE69",
-    "dataURL" : "file:///Users/gforsythe/Desktop/TicTacTest.csv"
+    "dataURL" : "file:///Users/gforsythe/Desktop/TicTacTest.csv",
+    "error" : {
+      "code" : 257,
+      "domain" : "NSCocoaErrorDomain",
+      "errorType" : "error",
+      "reason" : "You don’t have permission. at \"TicTacTest.csv\""
+    }
   },
   "dataURL" : "file:///Users/gforsythe/Desktop/TicTacTest.csv",
   "experimentIDs" : [
-    "E27EC4C4-8453-4C90-AEC3-20F44567C9FC"
+    "E27EC4C4-8453-4C90-AEC3-20F44567C9FC",
+    "EE8DCB58-73D6-4F1A-8C57-F05EA0A85FB6"
   ],
   "id" : "20CEACAC-47A8-4964-96FD-8CB6334AEE69",
-  "modifiedDate" : "2025-11-07T19:17:28Z",
+  "modifiedDate" : "2025-11-11T20:14:42Z",
   "pathType" : 0,
   "preferredFilename" : "TicTacTest.csv",
   "title" : "TicTacTest.csv",

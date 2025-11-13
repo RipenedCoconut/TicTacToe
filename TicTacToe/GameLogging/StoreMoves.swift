@@ -9,9 +9,9 @@ import Foundation
 
 var csvExportData: [[String]] = []
 
-func saveComputerMove (cpuNextMove: tileLocation) {
-    let gameComputerTiles = cpuTiles.map { $0.toString }.joined(separator: "-")
-    let gamePlayerTiles = playerTiles.map { $0.toString }.joined(separator: "-")
+func saveComputerMove (cpuNextMove: tileLocation, currentGame: GameModel) {
+    let gameComputerTiles = currentGame.cpuTiles.map { $0.toString }.joined(separator: "-")
+    let gamePlayerTiles = currentGame.playerTiles.map { $0.toString }.joined(separator: "-")
     let gameNextTile = String(describing: cpuNextMove)
     
     let csvRowData = [gameComputerTiles, gamePlayerTiles, gameNextTile]
@@ -19,14 +19,14 @@ func saveComputerMove (cpuNextMove: tileLocation) {
     csvExportData.append(csvRowData)
 }
 
-func exportData() {
+func exportData(currentGame: GameModel) {
     guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
         print("Could not access documents directory.")
         return
     }
     let fileURL = documentsDirectory.appendingPathComponent("TicTacData.csv")
     
-    let computerWin = (currentWinner == .computer) ? 1 : 0
+    let computerWin = (currentGame.currentWinner == .computer) ? 1 : 0
     
     var csvString = ""
     for csvRow in csvExportData {
