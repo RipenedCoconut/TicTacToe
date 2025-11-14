@@ -20,54 +20,54 @@ struct ContentView: View {
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .a1, currentGame: currGame)){
-                    currGame.buttonPressed(bPressed: tileLocation.a1, currentGame: currGame)
+                    currGame.buttonPressed(bPressed: tileLocation.a1)
                 }.buttonStyle(.bordered)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .a2, currentGame: currGame)){
-                    currGame.buttonPressed(bPressed: tileLocation.a2, currentGame: currGame)
+                    currGame.buttonPressed(bPressed: tileLocation.a2)
                 }.buttonStyle(.bordered)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .a3, currentGame: currGame)){
-                    currGame.buttonPressed(bPressed: tileLocation.a3, currentGame: currGame)
+                    currGame.buttonPressed(bPressed: tileLocation.a3)
                 }.buttonStyle(.bordered)
             }
             HStack{
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .b1, currentGame: currGame)){
-                    currGame.buttonPressed(bPressed: tileLocation.b1, currentGame: currGame)
+                    currGame.buttonPressed(bPressed: tileLocation.b1)
                 }.buttonStyle(.bordered)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .b2, currentGame: currGame)){
-                    currGame.buttonPressed(bPressed: tileLocation.b2, currentGame: currGame)
+                    currGame.buttonPressed(bPressed: tileLocation.b2)
                 }.buttonStyle(.bordered)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .b3, currentGame: currGame)){
-                    currGame.buttonPressed(bPressed: tileLocation.b3, currentGame: currGame)
+                    currGame.buttonPressed(bPressed: tileLocation.b3)
                 }.buttonStyle(.bordered)
             }
             HStack {
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .c1, currentGame: currGame)){
-                    currGame.buttonPressed(bPressed: tileLocation.c1, currentGame: currGame)
+                    currGame.buttonPressed(bPressed: tileLocation.c1)
                 }.buttonStyle(.bordered)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .c2, currentGame: currGame)){
-                    currGame.buttonPressed(bPressed: tileLocation.c2, currentGame: currGame)
+                    currGame.buttonPressed(bPressed: tileLocation.c2)
                 }.buttonStyle(.bordered)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .c3, currentGame: currGame)){
-                    currGame.buttonPressed(bPressed: tileLocation.c3, currentGame: currGame)
+                    currGame.buttonPressed(bPressed: tileLocation.c3)
                 }.buttonStyle(.bordered)
                 
-                    .alert(currGame.currentWinner.winMessage, isPresented: $currGame.gameOver){
+                .alert(currGame.currentWinner.winMessage, isPresented: $currGame.gameOver){
                     Button("Close", role: .cancel){}
                 }
             }
