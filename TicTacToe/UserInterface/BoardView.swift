@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BoardView: View {
     @StateObject public var currGame = GameModel()
     @State public var selectedSymbol: playerSymbol = playerSymbol.playerX
     @State public var selectedDifficulty: gameDifficulty = .normal
@@ -102,5 +102,5 @@ struct ContentView: View {
 
 }
 #Preview {
-    ContentView()
+    BoardView()
 }
