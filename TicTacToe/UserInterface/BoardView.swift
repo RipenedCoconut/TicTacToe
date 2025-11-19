@@ -22,16 +22,25 @@ struct BoardView: View {
                 Button(bModel.text(buttonID: .a1, currentGame: currGame)){
                     currGame.buttonPressed(bPressed: tileLocation.a1)
                 }.buttonStyle(.bordered)
+                    .controlSize(.extraLarge)
+                    .buttonBorderShape(.roundedRectangle)
+                    .frame(width: 40, height: 40, alignment: .center)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .a2, currentGame: currGame)){
                     currGame.buttonPressed(bPressed: tileLocation.a2)
                 }.buttonStyle(.bordered)
+                    .controlSize(.extraLarge)
+                    .buttonBorderShape(.roundedRectangle)
+                    .frame(width: 40, height: 40, alignment: .center)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .a3, currentGame: currGame)){
                     currGame.buttonPressed(bPressed: tileLocation.a3)
                 }.buttonStyle(.bordered)
+                    .controlSize(.extraLarge)
+                    .buttonBorderShape(.roundedRectangle)
+                    .frame(width: 40, height: 40, alignment: .center)
             }
             HStack{
                 
@@ -39,41 +48,58 @@ struct BoardView: View {
                 Button(bModel.text(buttonID: .b1, currentGame: currGame)){
                     currGame.buttonPressed(bPressed: tileLocation.b1)
                 }.buttonStyle(.bordered)
+                    .controlSize(.extraLarge)
+                    .buttonBorderShape(.roundedRectangle)
+                    .frame(width: 40, height: 40, alignment: .center)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .b2, currentGame: currGame)){
                     currGame.buttonPressed(bPressed: tileLocation.b2)
                 }.buttonStyle(.bordered)
+                    .controlSize(.extraLarge)
+                    .buttonBorderShape(.roundedRectangle)
+                    .frame(width: 40, height: 40, alignment: .center)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .b3, currentGame: currGame)){
                     currGame.buttonPressed(bPressed: tileLocation.b3)
                 }.buttonStyle(.bordered)
+                    .controlSize(.extraLarge)
+                    .buttonBorderShape(.roundedRectangle)
+                    .frame(width: 40, height: 40, alignment: .center)
             }
+            
             HStack {
-                
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .c1, currentGame: currGame)){
                     currGame.buttonPressed(bPressed: tileLocation.c1)
                 }.buttonStyle(.bordered)
+                    .controlSize(.extraLarge)
+                    .buttonBorderShape(.roundedRectangle)
+                    .frame(width: 40, height: 40, alignment: .center)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .c2, currentGame: currGame)){
                     currGame.buttonPressed(bPressed: tileLocation.c2)
                 }.buttonStyle(.bordered)
+                    .controlSize(.extraLarge)
+                    .buttonBorderShape(.roundedRectangle)
+                    .frame(width: 40, height: 40, alignment: .center)
                 
                 //Button text determined by text function in currentGame()
                 Button(bModel.text(buttonID: .c3, currentGame: currGame)){
                     currGame.buttonPressed(bPressed: tileLocation.c3)
                 }.buttonStyle(.bordered)
+                    .controlSize(.extraLarge)
+                    .buttonBorderShape(.roundedRectangle)
+                    .frame(width: 40, height: 40, alignment: .center)
                 
                 .alert(currGame.currentWinner.winMessage, isPresented: $currGame.gameOver){
                     Button("Close", role: .cancel){}
                 }
             }
+            .padding(.bottom, 15)
             
-            Spacer()
-                .frame(height: 15)
             
             Button("New Game"){
                 currGame.newGame()
@@ -97,8 +123,11 @@ struct BoardView: View {
             
             Text("Move number: " + String(currGame.getMoves()))
         }
-        .padding()
+        .padding(.all, 30)
+        .opacity(10)
+        
     }
+    
 
 }
 #Preview {

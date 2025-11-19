@@ -15,7 +15,6 @@
  * Returns: Correct symbol for the passed button as a string
  */
 func checkWinCondition (tileList: [tileLocation], currentGame: GameModel) -> Bool {
-    
     for currCondition in winningCombos {
         var matchedElements = 0
         for currElement in currCondition{

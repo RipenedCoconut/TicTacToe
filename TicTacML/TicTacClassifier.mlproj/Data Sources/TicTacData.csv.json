@@ -1,36 +1,5 @@
 {
   "activityEntities" : [
-    "dataSourceTrainingStarted",
-    [
-      {
-        "createdDate" : "2025-11-03T00:35:57Z",
-        "event" : "dataSourceTrainingStarted",
-        "id" : "40192CDC-E409-4613-B3F6-F7ADA884E2A4",
-        "subtitle" : "TicTacClassifier 1",
-        "title" : "Used By"
-      },
-      {
-        "createdDate" : "2025-11-07T19:16:20Z",
-        "event" : "dataSourceTrainingStarted",
-        "id" : "EA191F0D-ECB1-4B09-B4E8-E7DDC17EB66E",
-        "subtitle" : "TicTacClassifier 1",
-        "title" : "Used By"
-      },
-      {
-        "createdDate" : "2025-11-11T20:14:17Z",
-        "event" : "dataSourceTrainingStarted",
-        "id" : "176CDDF7-CB70-4BE7-9EFC-F092D8C9FBDD",
-        "subtitle" : "TicTacClassifier 1",
-        "title" : "Used By"
-      },
-      {
-        "createdDate" : "2025-11-11T20:49:18Z",
-        "event" : "dataSourceTrainingStarted",
-        "id" : "F090FC0B-D316-45E6-9B89-15E1AF8B07AC",
-        "subtitle" : "TicTacClassifier 1 copy",
-        "title" : "Used By"
-      }
-    ],
     "dataSourceMetrics",
     [
       {
@@ -60,6 +29,149 @@
         "id" : "94410315-54B8-419A-977D-89F4EB77E44A",
         "subtitle" : "9 Classes, 422 Items",
         "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-17T23:32:55Z",
+        "event" : "dataSourceMetrics",
+        "id" : "C30B9545-9AB3-4E5F-BB12-959BB5715A52",
+        "subtitle" : "9 Classes, 621 Items",
+        "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-17T23:33:50Z",
+        "event" : "dataSourceMetrics",
+        "id" : "2307CC81-1BB3-436B-82F4-467ED3CC84FA",
+        "subtitle" : "9 Classes, 621 Items",
+        "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-17T23:34:18Z",
+        "event" : "dataSourceMetrics",
+        "id" : "49015C67-F2DC-4217-8D67-933B169DD36B",
+        "subtitle" : "9 Classes, 621 Items",
+        "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-17T23:34:45Z",
+        "event" : "dataSourceMetrics",
+        "id" : "40D0FC84-ED5B-46B6-83AD-2BA50D64FB67",
+        "subtitle" : "9 Classes, 621 Items",
+        "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-17T23:35:43Z",
+        "event" : "dataSourceMetrics",
+        "id" : "4398E093-3843-4011-B1B3-6982F1A8D7F8",
+        "subtitle" : "9 Classes, 621 Items",
+        "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-17T23:36:18Z",
+        "event" : "dataSourceMetrics",
+        "id" : "1AEF9206-5832-42A5-B082-DB1440908972",
+        "subtitle" : "9 Classes, 621 Items",
+        "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-17T23:39:27Z",
+        "event" : "dataSourceMetrics",
+        "id" : "39E976C5-74F8-44D0-8034-0258BAA23091",
+        "subtitle" : "9 Classes, 621 Items",
+        "title" : "Data Summary"
+      },
+      {
+        "createdDate" : "2025-11-17T23:43:33Z",
+        "event" : "dataSourceMetrics",
+        "id" : "97A423ED-8450-43FE-BABA-06CA788AC16F",
+        "subtitle" : "9 Classes, 621 Items",
+        "title" : "Data Summary"
+      }
+    ],
+    "dataSourceTrainingStarted",
+    [
+      {
+        "createdDate" : "2025-11-03T00:35:57Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "40192CDC-E409-4613-B3F6-F7ADA884E2A4",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-07T19:16:20Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "EA191F0D-ECB1-4B09-B4E8-E7DDC17EB66E",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-11T20:14:17Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "176CDDF7-CB70-4BE7-9EFC-F092D8C9FBDD",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-11T20:49:18Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "F090FC0B-D316-45E6-9B89-15E1AF8B07AC",
+        "subtitle" : "TicTacClassifier 1 copy",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-17T23:32:55Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "F541ECB0-D517-4447-8EAB-83EAE395EA19",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-17T23:33:50Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "E26E8CA4-CAB1-4DCA-BF2F-9A6110404886",
+        "subtitle" : "TicTacClassifier 2",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-17T23:34:18Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "C7FB7922-A04A-4C63-B013-14BF2ED59C35",
+        "subtitle" : "TicTacClassifier 3",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-17T23:34:45Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "8F7C16DE-EB50-4387-9917-AA4BE5C163F7",
+        "subtitle" : "TicTacClassifier 4",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-17T23:35:43Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "4E7DA161-A06A-42E0-80A8-EE2CDA6EAC81",
+        "subtitle" : "TicTacClassifier 2",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-17T23:36:18Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "369A8E22-065D-4742-BFB2-683DD82B54F5",
+        "subtitle" : "TicTacClassifier 3",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-17T23:39:27Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "B1681F07-1742-4BF2-8909-6EAA2131CAF0",
+        "subtitle" : "TicTacClassifier 4",
+        "title" : "Used By"
+      },
+      {
+        "createdDate" : "2025-11-17T23:43:33Z",
+        "event" : "dataSourceTrainingStarted",
+        "id" : "71EEB052-29B7-40A5-9F2D-BA5EDBEB41C5",
+        "subtitle" : "TicTacClassifier 2",
+        "title" : "Used By"
       }
     ]
   ],
@@ -95,7 +207,7 @@
           "severity" : "notReady"
         },
         {
-          "description" : "Data has 422 rows",
+          "description" : "Data has 621 rows",
           "severity" : "info"
         },
         {
@@ -110,7 +222,7 @@
       },
       "summary" : {
         "canUseValidation" : 1,
-        "sampleCount" : 422
+        "sampleCount" : 621
       }
     },
     "dataSourceID" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
@@ -121,17 +233,25 @@
       "errorType" : "notReady",
       "reason" : "No target selected"
     },
-    "itemsCount" : 422
+    "itemsCount" : 621
   },
   "dataURL" : "file:///Users/gforsythe/Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv",
   "experimentIDs" : [
     "CDDAB3F3-C1C5-4C5F-9632-FEB662ACF24A",
     "E27EC4C4-8453-4C90-AEC3-20F44567C9FC",
     "EE8DCB58-73D6-4F1A-8C57-F05EA0A85FB6",
-    "BB9AE398-944B-4274-B117-21D4327477D4"
+    "BB9AE398-944B-4274-B117-21D4327477D4",
+    "00C5E034-2A09-4AF5-B2C3-64EF1AE79521",
+    "BF1529AF-9E4A-488A-A509-D9E8567779F5",
+    "5D3FBE7D-639D-4B39-9325-53DFB876562C",
+    "317814B8-7562-4AC4-996F-44447331A2BA",
+    "BB2DC9E7-1807-4CFE-BA26-3E374D50A8B0",
+    "E052D2E6-6C9A-4176-8EE5-E890CEE3F9F8",
+    "C609797B-164F-41DB-9EDA-E317F686B9C2",
+    "FDDB498F-B5D7-4AEE-88B3-127A46BCCF08"
   ],
   "id" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
-  "modifiedDate" : "2025-11-11T20:49:18Z",
+  "modifiedDate" : "2025-11-17T23:43:33Z",
   "pathType" : 0,
   "preferredFilename" : "TicTacData.csv",
   "title" : "TicTacData.csv",

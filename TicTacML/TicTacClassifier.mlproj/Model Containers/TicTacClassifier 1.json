@@ -1,0 +1,1527 @@
+{
+  "activityEntities" : [
+    "trainingFinished",
+    [
+      {
+        "createdDate" : "2025-11-17T23:32:57Z",
+        "event" : "trainingFinished",
+        "id" : "EBDC6965-4AF4-4A37-9B3A-ECA3331B38B5",
+        "subtitle" : "10 iterations",
+        "title" : "Training Completed"
+      }
+    ],
+    "trainingStarted",
+    [
+      {
+        "createdDate" : "2025-11-17T23:32:55Z",
+        "event" : "trainingStarted",
+        "id" : "7DD70838-9CB2-4ED9-A9AD-8A953CB84722",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Training Started"
+      }
+    ],
+    "trainingDataAdded",
+    [
+      {
+        "createdDate" : "2025-11-17T23:32:22Z",
+        "event" : "trainingDataAdded",
+        "id" : "C34B28A9-4D01-4A2B-8EB8-5E55E2D74C18",
+        "subtitle" : "TicTacData.csv",
+        "title" : "Training Data Added"
+      }
+    ],
+    "experimentCreated",
+    [
+      {
+        "createdDate" : "2025-11-17T23:32:11Z",
+        "event" : "experimentCreated",
+        "id" : "61C0FDFA-D8EB-4F34-BB0C-7120BF63B2CD",
+        "subtitle" : "TicTacClassifier 1",
+        "title" : "Model Source Created"
+      }
+    ]
+  ],
+  "contentDataResult" : {
+    "createdDate" : "2025-11-17T23:32:11Z"
+  },
+  "createdDate" : "2025-11-17T23:32:11Z",
+  "evaluationContainerEntity" : {
+    "createdDate" : "2025-11-17T23:32:57Z",
+    "evaluationEntities" : [
+      {
+        "analysedDataType" : "none",
+        "createdDate" : "2025-11-17T23:32:57Z",
+        "dataResult" : {
+
+        },
+        "id" : "9f524b13-f56c-4100-b193-3bb480a5f477"
+      }
+    ],
+    "id" : "a99c3ae5-e881-42c8-939b-6704bda26649",
+    "modifiedDate" : "2025-11-17T23:32:57Z",
+    "previewType" : "tabularClassifier",
+    "testingEvaluationEntity" : {
+      "analysedDataType" : "none",
+      "createdDate" : "2025-11-17T23:32:11Z",
+      "dataResult" : {
+        "createdDate" : "2025-11-17T23:32:11Z"
+      },
+      "id" : "9bf14fff-50d7-44ff-befa-cb1e5806692d"
+    },
+    "trainingEvaluationEntity" : {
+      "analysedDataType" : "none",
+      "createdDate" : "2025-11-17T23:32:11Z",
+      "dataResult" : {
+        "classesCount" : 9,
+        "createdDate" : "2025-11-17T23:32:11Z",
+        "dataAnalysis" : {
+          "classifierAnalysis" : {
+
+          },
+          "issues" : [
+            {
+              "description" : "Data has 621 rows",
+              "severity" : "info"
+            }
+          ],
+          "objectDetectorAnalysis" : {
+            "details" : {
+
+            }
+          },
+          "summary" : {
+            "canUseValidation" : 1,
+            "classCount" : 9,
+            "sampleCount" : 621
+          }
+        },
+        "dataSourceID" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
+        "dataURL" : "file:///Users/gforsythe/Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv",
+        "itemsCount" : 621
+      },
+      "dataSourceID" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
+      "evaluationResult" : {
+        "generalClassifier" : {
+          "accuracy" : 0.7137745974955277,
+          "confusionMatrix" : [
+            {
+              "actual" : "a1",
+              "count" : 30,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "a1",
+              "count" : 6,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "a1",
+              "count" : 1,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "a1",
+              "count" : 1,
+              "expected" : "b3"
+            },
+            {
+              "actual" : "a2",
+              "count" : 5,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "a2",
+              "count" : 46,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "a2",
+              "count" : 4,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "a2",
+              "count" : 2,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "a2",
+              "count" : 1,
+              "expected" : "b3"
+            },
+            {
+              "actual" : "a2",
+              "count" : 2,
+              "expected" : "c1"
+            },
+            {
+              "actual" : "a2",
+              "count" : 13,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "a3",
+              "count" : 2,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "a3",
+              "count" : 3,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "a3",
+              "count" : 55,
+              "expected" : "a3"
+            },
+            {
+              "actual" : "a3",
+              "count" : 3,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "a3",
+              "count" : 6,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "a3",
+              "count" : 5,
+              "expected" : "c1"
+            },
+            {
+              "actual" : "a3",
+              "count" : 8,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "b1",
+              "count" : 1,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "b1",
+              "count" : 36,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "b1",
+              "count" : 3,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "b1",
+              "count" : 1,
+              "expected" : "b3"
+            },
+            {
+              "actual" : "b1",
+              "count" : 5,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "b1",
+              "count" : 1,
+              "expected" : "c3"
+            },
+            {
+              "actual" : "b2",
+              "count" : 1,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "b2",
+              "count" : 1,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "b2",
+              "count" : 38,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "b2",
+              "count" : 1,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "b3",
+              "count" : 3,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "b3",
+              "count" : 1,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "b3",
+              "count" : 1,
+              "expected" : "a3"
+            },
+            {
+              "actual" : "b3",
+              "count" : 1,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "b3",
+              "count" : 9,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "b3",
+              "count" : 41,
+              "expected" : "b3"
+            },
+            {
+              "actual" : "b3",
+              "count" : 5,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "c1",
+              "count" : 4,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "c1",
+              "count" : 1,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "c1",
+              "count" : 6,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "c1",
+              "count" : 54,
+              "expected" : "c1"
+            },
+            {
+              "actual" : "c1",
+              "count" : 10,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "c2",
+              "count" : 2,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "c2",
+              "count" : 6,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "c2",
+              "count" : 9,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "c2",
+              "count" : 1,
+              "expected" : "b3"
+            },
+            {
+              "actual" : "c2",
+              "count" : 2,
+              "expected" : "c1"
+            },
+            {
+              "actual" : "c2",
+              "count" : 47,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "c2",
+              "count" : 1,
+              "expected" : "c3"
+            },
+            {
+              "actual" : "c3",
+              "count" : 1,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "c3",
+              "count" : 5,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "c3",
+              "count" : 2,
+              "expected" : "a3"
+            },
+            {
+              "actual" : "c3",
+              "count" : 1,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "c3",
+              "count" : 7,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "c3",
+              "count" : 6,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "c3",
+              "count" : 52,
+              "expected" : "c3"
+            }
+          ],
+          "statsByLabel" : {
+            "a1" : {
+              "count" : 38,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.6818181818181818,
+                  "recall" : 0.7894736842105263
+                }
+              }
+            },
+            "a2" : {
+              "count" : 73,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.6388888888888888,
+                  "recall" : 0.6301369863013698
+                }
+              }
+            },
+            "a3" : {
+              "count" : 82,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.9482758620689655,
+                  "recall" : 0.6707317073170732
+                }
+              }
+            },
+            "b1" : {
+              "count" : 47,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.75,
+                  "recall" : 0.7659574468085106
+                }
+              }
+            },
+            "b2" : {
+              "count" : 41,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.475,
+                  "recall" : 0.926829268292683
+                }
+              }
+            },
+            "b3" : {
+              "count" : 61,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.9111111111111111,
+                  "recall" : 0.6721311475409836
+                }
+              }
+            },
+            "c1" : {
+              "count" : 75,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.8571428571428571,
+                  "recall" : 0.72
+                }
+              }
+            },
+            "c2" : {
+              "count" : 68,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.49473684210526314,
+                  "recall" : 0.6911764705882353
+                }
+              }
+            },
+            "c3" : {
+              "count" : 74,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.9629629629629629,
+                  "recall" : 0.7027027027027027
+                }
+              }
+            }
+          }
+        }
+      },
+      "id" : "a167abd7-f2ef-493d-9aca-e48d93febd11"
+    },
+    "validationEvaluationEntity" : {
+      "analysedDataType" : "auto",
+      "createdDate" : "2025-11-17T23:32:11Z",
+      "dataResult" : {
+        "createdDate" : "2025-11-17T23:32:11Z"
+      },
+      "evaluationResult" : {
+        "generalClassifier" : {
+          "accuracy" : 0.4032258064516129,
+          "confusionMatrix" : [
+            {
+              "actual" : "a1",
+              "count" : 3,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "a1",
+              "count" : 1,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "a1",
+              "count" : 2,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "a1",
+              "count" : 2,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "a2",
+              "count" : 2,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "a2",
+              "count" : 1,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "a2",
+              "count" : 1,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "a2",
+              "count" : 2,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "a3",
+              "count" : 3,
+              "expected" : "a3"
+            },
+            {
+              "actual" : "a3",
+              "count" : 1,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "a3",
+              "count" : 2,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "a3",
+              "count" : 2,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "b1",
+              "count" : 2,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "b1",
+              "count" : 1,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "b2",
+              "count" : 2,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "b2",
+              "count" : 3,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "b2",
+              "count" : 1,
+              "expected" : "c1"
+            },
+            {
+              "actual" : "b3",
+              "count" : 1,
+              "expected" : "a1"
+            },
+            {
+              "actual" : "b3",
+              "count" : 2,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "b3",
+              "count" : 2,
+              "expected" : "b1"
+            },
+            {
+              "actual" : "b3",
+              "count" : 1,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "b3",
+              "count" : 1,
+              "expected" : "b3"
+            },
+            {
+              "actual" : "b3",
+              "count" : 1,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "b3",
+              "count" : 1,
+              "expected" : "c3"
+            },
+            {
+              "actual" : "c1",
+              "count" : 2,
+              "expected" : "a2"
+            },
+            {
+              "actual" : "c1",
+              "count" : 6,
+              "expected" : "c1"
+            },
+            {
+              "actual" : "c1",
+              "count" : 2,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "c1",
+              "count" : 1,
+              "expected" : "c3"
+            },
+            {
+              "actual" : "c2",
+              "count" : 1,
+              "expected" : "a3"
+            },
+            {
+              "actual" : "c2",
+              "count" : 1,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "c2",
+              "count" : 1,
+              "expected" : "c1"
+            },
+            {
+              "actual" : "c2",
+              "count" : 1,
+              "expected" : "c2"
+            },
+            {
+              "actual" : "c2",
+              "count" : 1,
+              "expected" : "c3"
+            },
+            {
+              "actual" : "c3",
+              "count" : 1,
+              "expected" : "b2"
+            },
+            {
+              "actual" : "c3",
+              "count" : 1,
+              "expected" : "c1"
+            },
+            {
+              "actual" : "c3",
+              "count" : 4,
+              "expected" : "c3"
+            }
+          ],
+          "statsByLabel" : {
+            "a1" : {
+              "count" : 8,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.5,
+                  "recall" : 0.375
+                }
+              }
+            },
+            "a2" : {
+              "count" : 6,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.2857142857142857,
+                  "recall" : 0.3333333333333333
+                }
+              }
+            },
+            "a3" : {
+              "count" : 8,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.75,
+                  "recall" : 0.375
+                }
+              }
+            },
+            "b1" : {
+              "count" : 3,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.25,
+                  "recall" : 0.6666666666666666
+                }
+              }
+            },
+            "b2" : {
+              "count" : 6,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.25,
+                  "recall" : 0.5
+                }
+              }
+            },
+            "b3" : {
+              "count" : 9,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 1,
+                  "recall" : 0.1111111111111111
+                }
+              }
+            },
+            "c1" : {
+              "count" : 11,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.6666666666666666,
+                  "recall" : 0.5454545454545454
+                }
+              }
+            },
+            "c2" : {
+              "count" : 5,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.125,
+                  "recall" : 0.2
+                }
+              }
+            },
+            "c3" : {
+              "count" : 6,
+              "precisionRecall" : {
+                "success" : {
+                  "precision" : 0.5714285714285714,
+                  "recall" : 0.6666666666666666
+                }
+              }
+            }
+          }
+        }
+      },
+      "id" : "36e47047-c700-422c-a8d9-0c739bb22ee3"
+    }
+  },
+  "evaluationEntity" : {
+    "analysedDataType" : "none",
+    "dataResult" : {
+
+    },
+    "id" : "cf1ef853-07ed-4625-b89e-20dd0469a609"
+  },
+  "evaluationState" : "uninitialized",
+  "id" : "00C5E034-2A09-4AF5-B2C3-64EF1AE79521",
+  "modelEntity" : {
+    "createdDate" : "2025-11-17T23:32:11Z",
+    "experimentID" : "00C5E034-2A09-4AF5-B2C3-64EF1AE79521",
+    "id" : "CE634F86-5B8D-46D1-BBA7-338633E617C2",
+    "modelURL" : "Models/TicTacClassifier%201.mlmodel",
+    "modifiedDate" : "2025-11-17T23:32:11Z",
+    "title" : "",
+    "version" : "1.0"
+  },
+  "modifiedDate" : "2025-11-17T23:32:57Z",
+  "preferredFilename" : "TicTacClassifier 1",
+  "settingEntity" : {
+    "algorithmType" : "maxEnt",
+    "augmentations" : [
+
+    ],
+    "featureNames" : [
+      "ComputerTiles",
+      "PlayerTiles",
+      "ComputerWon"
+    ],
+    "generalClassifierType" : {
+      "logisticRegressionClassifier" : {
+        "convergenceThreshold" : 0.01,
+        "featureRescaling" : true,
+        "l1Penalty" : 0,
+        "l2Penalty" : 0.01,
+        "stepSize" : 1
+      }
+    },
+    "handActionClassifierAugmentations" : [
+
+    ],
+    "handPoseClassifierAugmentations" : [
+
+    ],
+    "harVideoAugmentations" : 0,
+    "seedType" : "default",
+    "styleTransferAlgorithmType" : "image",
+    "suggestedColumnTypes" : [
+      "String",
+      "String",
+      "String",
+      "Int"
+    ],
+    "suggestedColumnValues" : [
+      "<nil>, c1, c1-a3, <nil>, c3, c3-c1, c3-c1-a3, <nil>, b2, b2-c1, <nil>, a2, a2-c1, <nil>, a2, a2-c1, a2-c1-b2, <nil>, b2, b2-c1, <nil>, c1, c1-a3, c1-a3-a1, <nil>, b3, <nil>, c2, <nil>, c3",
+      "a1, a1-a2, a1-a2-b2, a1, a1-b1, a1-b1-c2, a1-b1-c2-b2, a1, a1-b1, a1-b1-c2, a1, a1-b1, a1-b1-b2, a1, a1-b1, a1-b1-c3, a1-b1-c3-c2, a1, a1-b1, a1-b1-c2, c3, c3-c2, c3-c2-b2, c3-c2-b2-b3, a3, a3-b2, a1, a1-b2, c1, c1-b1",
+      "c1, a3, c2, c3, c1, a3, b3, b2, c1, a3, a2, c1, b3, a2, c1, b2, a3, b2, c1, a3, c1, a3, a1, a2, b3, c2, c2, b1, c3, b3",
+      "0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0"
+    ],
+    "suggestedColumns" : [
+      "ComputerTiles",
+      "PlayerTiles",
+      "ComputerNextMove",
+      "ComputerWon"
+    ],
+    "targetColumn" : "ComputerNextMove",
+    "taskType" : "generalClassifier",
+    "transferLearningEmbeddingType" : "dynamic"
+  },
+  "snapshotRole" : {
+    "withoutSnapshots" : 0
+  },
+  "state" : "trained",
+  "title" : "TicTacClassifier 1",
+  "trainingEntity" : {
+    "analysedDataType" : "datasource",
+    "checkpointMetrics" : {
+
+    },
+    "dataResult" : {
+      "classesCount" : 9,
+      "columnTypes" : [
+        "String",
+        "String",
+        "String",
+        "Int"
+      ],
+      "columnValues" : [
+        "<nil>, c1, c1-a3, <nil>, c3, c3-c1, c3-c1-a3, <nil>, b2, b2-c1, <nil>, a2, a2-c1, <nil>, a2, a2-c1, a2-c1-b2, <nil>, b2, b2-c1, <nil>, c1, c1-a3, c1-a3-a1, <nil>, b3, <nil>, c2, <nil>, c3",
+        "a1, a1-a2, a1-a2-b2, a1, a1-b1, a1-b1-c2, a1-b1-c2-b2, a1, a1-b1, a1-b1-c2, a1, a1-b1, a1-b1-b2, a1, a1-b1, a1-b1-c3, a1-b1-c3-c2, a1, a1-b1, a1-b1-c2, c3, c3-c2, c3-c2-b2, c3-c2-b2-b3, a3, a3-b2, a1, a1-b2, c1, c1-b1",
+        "c1, a3, c2, c3, c1, a3, b3, b2, c1, a3, a2, c1, b3, a2, c1, b2, a3, b2, c1, a3, c1, a3, a1, a2, b3, c2, c2, b1, c3, b3",
+        "0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0"
+      ],
+      "columns" : [
+        "ComputerTiles",
+        "PlayerTiles",
+        "ComputerNextMove",
+        "ComputerWon"
+      ],
+      "createdDate" : "2025-11-17T23:32:11Z",
+      "dataAnalysis" : {
+        "classifierAnalysis" : {
+
+        },
+        "issues" : [
+          {
+            "description" : "Data has 621 rows",
+            "severity" : "info"
+          }
+        ],
+        "objectDetectorAnalysis" : {
+          "details" : {
+
+          }
+        },
+        "summary" : {
+          "canUseValidation" : 1,
+          "classCount" : 9,
+          "sampleCount" : 621
+        }
+      },
+      "dataSourceID" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
+      "dataURL" : "file:///Users/gforsythe/Library/Containers/com.ripenedcoconut.TicTacToe/Data/Documents/TicTacData.csv",
+      "itemsCount" : 621
+    },
+    "dataSourceID" : "0BDF8810-DEBA-416B-9B5C-9445132B1299",
+    "featureExtractionCheckpointMayBeAvailable" : false,
+    "finishTime" : "2025-11-17T23:32:57Z",
+    "progress" : [
+
+    ],
+    "snapshottableCheckpoints" : {
+
+    },
+    "startTime" : "2025-11-17T23:32:55Z",
+    "trainingAccuracy" : 0.7137745974955277,
+    "trainingResults" : {
+      "generalClassifier" : {
+        "accuracy" : 0.7137745974955277,
+        "confusionMatrix" : [
+          {
+            "actual" : "a1",
+            "count" : 30,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "a1",
+            "count" : 6,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "a1",
+            "count" : 1,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "a1",
+            "count" : 1,
+            "expected" : "b3"
+          },
+          {
+            "actual" : "a2",
+            "count" : 5,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "a2",
+            "count" : 46,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "a2",
+            "count" : 4,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "a2",
+            "count" : 2,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "a2",
+            "count" : 1,
+            "expected" : "b3"
+          },
+          {
+            "actual" : "a2",
+            "count" : 2,
+            "expected" : "c1"
+          },
+          {
+            "actual" : "a2",
+            "count" : 13,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "a3",
+            "count" : 2,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "a3",
+            "count" : 3,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "a3",
+            "count" : 55,
+            "expected" : "a3"
+          },
+          {
+            "actual" : "a3",
+            "count" : 3,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "a3",
+            "count" : 6,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "a3",
+            "count" : 5,
+            "expected" : "c1"
+          },
+          {
+            "actual" : "a3",
+            "count" : 8,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "b1",
+            "count" : 1,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "b1",
+            "count" : 36,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "b1",
+            "count" : 3,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "b1",
+            "count" : 1,
+            "expected" : "b3"
+          },
+          {
+            "actual" : "b1",
+            "count" : 5,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "b1",
+            "count" : 1,
+            "expected" : "c3"
+          },
+          {
+            "actual" : "b2",
+            "count" : 1,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "b2",
+            "count" : 1,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "b2",
+            "count" : 38,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "b2",
+            "count" : 1,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "b3",
+            "count" : 3,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "b3",
+            "count" : 1,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "b3",
+            "count" : 1,
+            "expected" : "a3"
+          },
+          {
+            "actual" : "b3",
+            "count" : 1,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "b3",
+            "count" : 9,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "b3",
+            "count" : 41,
+            "expected" : "b3"
+          },
+          {
+            "actual" : "b3",
+            "count" : 5,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "c1",
+            "count" : 4,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "c1",
+            "count" : 1,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "c1",
+            "count" : 6,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "c1",
+            "count" : 54,
+            "expected" : "c1"
+          },
+          {
+            "actual" : "c1",
+            "count" : 10,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "c2",
+            "count" : 2,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "c2",
+            "count" : 6,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "c2",
+            "count" : 9,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "c2",
+            "count" : 1,
+            "expected" : "b3"
+          },
+          {
+            "actual" : "c2",
+            "count" : 2,
+            "expected" : "c1"
+          },
+          {
+            "actual" : "c2",
+            "count" : 47,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "c2",
+            "count" : 1,
+            "expected" : "c3"
+          },
+          {
+            "actual" : "c3",
+            "count" : 1,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "c3",
+            "count" : 5,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "c3",
+            "count" : 2,
+            "expected" : "a3"
+          },
+          {
+            "actual" : "c3",
+            "count" : 1,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "c3",
+            "count" : 7,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "c3",
+            "count" : 6,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "c3",
+            "count" : 52,
+            "expected" : "c3"
+          }
+        ],
+        "statsByLabel" : {
+          "a1" : {
+            "count" : 38,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.6818181818181818,
+                "recall" : 0.7894736842105263
+              }
+            }
+          },
+          "a2" : {
+            "count" : 73,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.6388888888888888,
+                "recall" : 0.6301369863013698
+              }
+            }
+          },
+          "a3" : {
+            "count" : 82,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.9482758620689655,
+                "recall" : 0.6707317073170732
+              }
+            }
+          },
+          "b1" : {
+            "count" : 47,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.75,
+                "recall" : 0.7659574468085106
+              }
+            }
+          },
+          "b2" : {
+            "count" : 41,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.475,
+                "recall" : 0.926829268292683
+              }
+            }
+          },
+          "b3" : {
+            "count" : 61,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.9111111111111111,
+                "recall" : 0.6721311475409836
+              }
+            }
+          },
+          "c1" : {
+            "count" : 75,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.8571428571428571,
+                "recall" : 0.72
+              }
+            }
+          },
+          "c2" : {
+            "count" : 68,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.49473684210526314,
+                "recall" : 0.6911764705882353
+              }
+            }
+          },
+          "c3" : {
+            "count" : 74,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.9629629629629629,
+                "recall" : 0.7027027027027027
+              }
+            }
+          }
+        }
+      }
+    },
+    "validationAccuracy" : 0.4032258064516129,
+    "validationResults" : {
+      "generalClassifier" : {
+        "accuracy" : 0.4032258064516129,
+        "confusionMatrix" : [
+          {
+            "actual" : "a1",
+            "count" : 3,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "a1",
+            "count" : 1,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "a1",
+            "count" : 2,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "a1",
+            "count" : 2,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "a2",
+            "count" : 2,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "a2",
+            "count" : 1,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "a2",
+            "count" : 1,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "a2",
+            "count" : 2,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "a3",
+            "count" : 3,
+            "expected" : "a3"
+          },
+          {
+            "actual" : "a3",
+            "count" : 1,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "a3",
+            "count" : 2,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "a3",
+            "count" : 2,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "b1",
+            "count" : 2,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "b1",
+            "count" : 1,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "b2",
+            "count" : 2,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "b2",
+            "count" : 3,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "b2",
+            "count" : 1,
+            "expected" : "c1"
+          },
+          {
+            "actual" : "b3",
+            "count" : 1,
+            "expected" : "a1"
+          },
+          {
+            "actual" : "b3",
+            "count" : 2,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "b3",
+            "count" : 2,
+            "expected" : "b1"
+          },
+          {
+            "actual" : "b3",
+            "count" : 1,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "b3",
+            "count" : 1,
+            "expected" : "b3"
+          },
+          {
+            "actual" : "b3",
+            "count" : 1,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "b3",
+            "count" : 1,
+            "expected" : "c3"
+          },
+          {
+            "actual" : "c1",
+            "count" : 2,
+            "expected" : "a2"
+          },
+          {
+            "actual" : "c1",
+            "count" : 6,
+            "expected" : "c1"
+          },
+          {
+            "actual" : "c1",
+            "count" : 2,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "c1",
+            "count" : 1,
+            "expected" : "c3"
+          },
+          {
+            "actual" : "c2",
+            "count" : 1,
+            "expected" : "a3"
+          },
+          {
+            "actual" : "c2",
+            "count" : 1,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "c2",
+            "count" : 1,
+            "expected" : "c1"
+          },
+          {
+            "actual" : "c2",
+            "count" : 1,
+            "expected" : "c2"
+          },
+          {
+            "actual" : "c2",
+            "count" : 1,
+            "expected" : "c3"
+          },
+          {
+            "actual" : "c3",
+            "count" : 1,
+            "expected" : "b2"
+          },
+          {
+            "actual" : "c3",
+            "count" : 1,
+            "expected" : "c1"
+          },
+          {
+            "actual" : "c3",
+            "count" : 4,
+            "expected" : "c3"
+          }
+        ],
+        "statsByLabel" : {
+          "a1" : {
+            "count" : 8,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.5,
+                "recall" : 0.375
+              }
+            }
+          },
+          "a2" : {
+            "count" : 6,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.2857142857142857,
+                "recall" : 0.3333333333333333
+              }
+            }
+          },
+          "a3" : {
+            "count" : 8,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.75,
+                "recall" : 0.375
+              }
+            }
+          },
+          "b1" : {
+            "count" : 3,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.25,
+                "recall" : 0.6666666666666666
+              }
+            }
+          },
+          "b2" : {
+            "count" : 6,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.25,
+                "recall" : 0.5
+              }
+            }
+          },
+          "b3" : {
+            "count" : 9,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 1,
+                "recall" : 0.1111111111111111
+              }
+            }
+          },
+          "c1" : {
+            "count" : 11,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.6666666666666666,
+                "recall" : 0.5454545454545454
+              }
+            }
+          },
+          "c2" : {
+            "count" : 5,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.125,
+                "recall" : 0.2
+              }
+            }
+          },
+          "c3" : {
+            "count" : 6,
+            "precisionRecall" : {
+              "success" : {
+                "precision" : 0.5714285714285714,
+                "recall" : 0.6666666666666666
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "validationEntity" : {
+    "analysedDataType" : "auto",
+    "dataResult" : {
+      "createdDate" : "2025-11-17T23:32:11Z"
+    },
+    "splitOptions" : {
+      "strategy" : {
+        "automatic" : {
+
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

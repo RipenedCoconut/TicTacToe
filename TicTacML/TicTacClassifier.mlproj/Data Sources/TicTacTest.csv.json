@@ -5,23 +5,71 @@
   "createdDate" : "2025-11-07T19:17:28Z",
   "dataPathRelativeToProjectURL" : "../../../../../Desktop/TicTacTest.csv/",
   "dataResult" : {
+    "columnTypes" : [
+      "String",
+      "String",
+      "String",
+      "Int"
+    ],
+    "columnValues" : [
+      "<nil>, c1, c1-a3, <nil>, c3, c3-c1, c3-c1-a3, <nil>, b2, b2-c1, <nil>, a2, a2-c1, <nil>, a2, a2-c1, a2-c1-b2, <nil>, b2, b2-c1, <nil>, c1, c1-a3, c1-a3-a1, <nil>, b3, <nil>, c2, <nil>, c3",
+      "a1, a1-a2, a1-a2-b2, a1, a1-b1, a1-b1-c2, a1-b1-c2-b2, a1, a1-b1, a1-b1-c2, a1, a1-b1, a1-b1-b2, a1, a1-b1, a1-b1-c3, a1-b1-c3-c2, a1, a1-b1, a1-b1-c2, c3, c3-c2, c3-c2-b2, c3-c2-b2-b3, a3, a3-b2, a1, a1-b2, c1, c1-b1",
+      "<nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>, <nil>",
+      "0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0"
+    ],
+    "columns" : [
+      "ComputerTiles",
+      "PlayerTiles",
+      "ComputerNextMove",
+      "ComputerWon"
+    ],
     "createdDate" : "2025-11-07T19:17:28Z",
+    "dataAnalysis" : {
+      "classifierAnalysis" : {
+
+      },
+      "issues" : [
+        {
+          "description" : "No target selected",
+          "severity" : "notReady"
+        },
+        {
+          "description" : "Data has 213 rows",
+          "severity" : "info"
+        },
+        {
+          "description" : "No features selected",
+          "severity" : "notReady"
+        }
+      ],
+      "objectDetectorAnalysis" : {
+        "details" : {
+
+        }
+      },
+      "summary" : {
+        "canUseValidation" : 1,
+        "sampleCount" : 213
+      }
+    },
     "dataSourceID" : "20CEACAC-47A8-4964-96FD-8CB6334AEE69",
     "dataURL" : "file:///Users/gforsythe/Desktop/TicTacTest.csv",
     "error" : {
-      "code" : 257,
-      "domain" : "NSCocoaErrorDomain",
-      "errorType" : "error",
-      "reason" : "You don’t have permission. at \"TicTacTest.csv\""
-    }
+      "code" : 1000,
+      "domain" : "composer.error.domain",
+      "errorType" : "notReady",
+      "reason" : "No target selected"
+    },
+    "itemsCount" : 213
   },
   "dataURL" : "file:///Users/gforsythe/Desktop/TicTacTest.csv",
   "experimentIDs" : [
     "E27EC4C4-8453-4C90-AEC3-20F44567C9FC",
-    "EE8DCB58-73D6-4F1A-8C57-F05EA0A85FB6"
+    "EE8DCB58-73D6-4F1A-8C57-F05EA0A85FB6",
+    "00C5E034-2A09-4AF5-B2C3-64EF1AE79521"
   ],
   "id" : "20CEACAC-47A8-4964-96FD-8CB6334AEE69",
-  "modifiedDate" : "2025-11-11T20:14:42Z",
+  "modifiedDate" : "2025-11-17T23:32:40Z",
   "pathType" : 0,
   "preferredFilename" : "TicTacTest.csv",
   "title" : "TicTacTest.csv",
